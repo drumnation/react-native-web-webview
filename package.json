@@ -22,7 +22,8 @@
   "scripts": {
     "prepublish": "yarn build",
     "build": "mkdir -p dist && babel src/index.js --out-file dist/index.js && babel src/postMock.html --out-file dist/postMock.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "yarn build"
   },
   "babel": {
     "presets": [
